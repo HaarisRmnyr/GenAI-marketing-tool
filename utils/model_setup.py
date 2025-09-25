@@ -9,5 +9,3 @@ def generate_caption(product_name):
     prompt = f"Write a catchy Instagram caption for a product called '{product_name}'"
     result = generator(prompt, max_length=50)
     return result[0]['generated_text']
-
-print(generate_caption("Wonder Bread Whole Wheat"))
